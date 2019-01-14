@@ -127,7 +127,8 @@ Function fl_MainWorkflow
     '======================================================
     
     '======================================================
-    'Add Application - Scenario 2 - Submitted 
+    'Add Application - Scenario 2 - Submitted --- ALM TC CBCI140001_Add application to an existing IC
+    '======================================================
     fgl_TrackSteps ("IC - Add application"): If not fnp_ClickAnyLinkByTextByIndex ("Add Application…","index:=0") then fl_MainWorkflow=false:exit function	
 	If not fu_waitTillBrowserReady(10,g_pageTitle) then Wait(2)
 	
