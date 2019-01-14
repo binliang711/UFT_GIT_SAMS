@@ -105,8 +105,11 @@ Function fl_MainWorkflow
 	If not fu_waitTillBrowserReady(10,g_pageTitle) then Wait(2)
 ''    '======================================================
     
+    
+    
     '======================================================
-    'Add Application - Scenario 1 - Cancel 
+    'Add Application - Scenario 1 - Cancel --- ALM TC CBCI140001_Add application to an existing IC_AltFlow_01 
+    '======================================================
     fgl_TrackSteps ("IC - Add application"): If not fnp_ClickAnyLinkByTextByIndex ("Add Application…","index:=0") then fl_MainWorkflow=false:exit function	
 	If not fu_waitTillBrowserReady(10,g_pageTitle) then Wait(2)
 	
